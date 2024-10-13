@@ -13,7 +13,7 @@
 - Flask (или другой фреймворк для сайта, если нужно)
 - Библиотека для работы с Telegram API (aiogram)
 
-### Установка
+### Установка бота
 
 1. Клонируйте репозиторий:
 
@@ -38,18 +38,35 @@ ADMINS_LIST=[ID телеграм аккаунтов администраторо
 
    
 bash
-python bot.py
+python bot_engine.py
 
-5. Для запуска веб-сайта:
+### Установка сайта
+
+1. Клонируйте репозиторий:
 
    
 bash
-python app.py
+git clone https://github.com/YoungTorvalds/SportClub.git
+cd SportClub/
+
+2. Установите зависимости:
+
+   
+bash
+pip install -r requirements.txt
+
+
+3. Запустите сайт:
+
+   
+bash
+python main.py
+
 
 ## Использование
 
-- Для взаимодействия с Telegram-ботом, найдите его по [username] в Telegram и используйте команды.
-- Для доступа к веб-сайту, перейдите по адресу [URL сайта].
+- Для взаимодействия с Telegram-ботом, найдите его по @SportClubPlimpbot в Telegram и используйте команды.
+- Для доступа к веб-сайту, перейдите по локальному адресу.
 
 ## Команды бота
 
